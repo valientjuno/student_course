@@ -1,0 +1,28 @@
+### get tooele tech route
+GET http://localhost:3007/ttech HTTP/1.1
+
+### get the root path /
+GET http://localhost:3007/ HTTP/1.1
+
+### get all students
+GET http://localhost:3007/students/ HTTP/1.1
+
+### get one student
+GET http://localhost:3007/students/68c8561137ada3d77fc95672 HTTP/1.1
+
+###CREATE A STUDENT
+POST http://localhost:3007/students/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Jake",
+    "lastName": "Farmer",
+    "email": "jfarmer@test.com",
+    "age": 27,
+    "currentCollege": "TTech"
+}
+
+
+###Delete a Student
+DELETE http://localhost:3007/students/ HTTP/1.1
+Content-Type: application/json
